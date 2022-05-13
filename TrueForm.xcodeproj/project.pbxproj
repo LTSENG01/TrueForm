@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4601D9B7281262CC005EDE3A /* SensorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4601D9B6281262CC005EDE3A /* SensorManager.swift */; };
+		4612859E28125F2B009AF8AE /* TrueFormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612859D28125F2B009AF8AE /* TrueFormApp.swift */; };
+		461285A028125F2B009AF8AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612859F28125F2B009AF8AE /* ContentView.swift */; };
+		461285A228125F30009AF8AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461285A128125F30009AF8AE /* Assets.xcassets */; };
+		461285A528125F30009AF8AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461285A428125F30009AF8AE /* Preview Assets.xcassets */; };
+		461285A928125F30009AF8AE /* TrueForm WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 461285A828125F30009AF8AE /* TrueForm WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		461285AE28125F32009AF8AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461285AD28125F32009AF8AE /* Assets.xcassets */; };
+		461285B428125F33009AF8AE /* TrueForm WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 461285B328125F33009AF8AE /* TrueForm WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		461285B928125F33009AF8AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461285B828125F33009AF8AE /* ContentView.swift */; };
+		461285BB28125F33009AF8AE /* TrueFormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461285BA28125F33009AF8AE /* TrueFormApp.swift */; };
+		461285BD28125F33009AF8AE /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461285BC28125F33009AF8AE /* ComplicationController.swift */; };
+		461285BF28125F35009AF8AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461285BE28125F35009AF8AE /* Assets.xcassets */; };
+		461285C228125F35009AF8AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461285C128125F35009AF8AE /* Preview Assets.xcassets */; };
+		46A3FD5F28139EC70057CAB0 /* FileSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A3FD5E28139EC70057CAB0 /* FileSender.swift */; };
+		46A3FD612813A5570057CAB0 /* FileReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A3FD602813A5570057CAB0 /* FileReceiver.swift */; };
+		46D2575C282ADAC200CC311A /* RunAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D2575B282ADAC200CC311A /* RunAnalyzer.swift */; };
+		46D2575E282ADB1800CC311A /* RunVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D2575D282ADB1800CC311A /* RunVisualizer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		461285AA28125F30009AF8AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4612859228125F2A009AF8AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 461285A728125F30009AF8AE;
+			remoteInfo = "TrueForm WatchKit App";
+		};
+		461285B528125F33009AF8AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4612859228125F2A009AF8AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 461285B228125F33009AF8AE;
+			remoteInfo = "TrueForm WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		461285C928125F35009AF8AE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				461285B428125F33009AF8AE /* TrueForm WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		461285CD28125F35009AF8AE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				461285A928125F30009AF8AE /* TrueForm WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4601D9B6281262CC005EDE3A /* SensorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorManager.swift; sourceTree = "<group>"; };
+		4612859A28125F2B009AF8AE /* TrueForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4612859D28125F2B009AF8AE /* TrueFormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueFormApp.swift; sourceTree = "<group>"; };
+		4612859F28125F2B009AF8AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		461285A128125F30009AF8AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		461285A428125F30009AF8AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		461285A828125F30009AF8AE /* TrueForm WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TrueForm WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		461285AD28125F32009AF8AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		461285B328125F33009AF8AE /* TrueForm WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TrueForm WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		461285B828125F33009AF8AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		461285BA28125F33009AF8AE /* TrueFormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueFormApp.swift; sourceTree = "<group>"; };
+		461285BC28125F33009AF8AE /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		461285BE28125F35009AF8AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		461285C128125F35009AF8AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		461285C328125F35009AF8AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46A3FD5E28139EC70057CAB0 /* FileSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSender.swift; sourceTree = "<group>"; };
+		46A3FD602813A5570057CAB0 /* FileReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReceiver.swift; sourceTree = "<group>"; };
+		46CA63AC28205530008FB7EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		46D2575B282ADAC200CC311A /* RunAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunAnalyzer.swift; sourceTree = "<group>"; };
+		46D2575D282ADB1800CC311A /* RunVisualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunVisualizer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4612859728125F2B009AF8AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		461285B028125F33009AF8AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4612859128125F2A009AF8AE = {
+			isa = PBXGroup;
+			children = (
+				4612859C28125F2B009AF8AE /* TrueForm */,
+				461285AC28125F30009AF8AE /* TrueForm WatchKit App */,
+				461285B728125F33009AF8AE /* TrueForm WatchKit Extension */,
+				4612859B28125F2B009AF8AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4612859B28125F2B009AF8AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4612859A28125F2B009AF8AE /* TrueForm.app */,
+				461285A828125F30009AF8AE /* TrueForm WatchKit App.app */,
+				461285B328125F33009AF8AE /* TrueForm WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4612859C28125F2B009AF8AE /* TrueForm */ = {
+			isa = PBXGroup;
+			children = (
+				46CA63AC28205530008FB7EF /* Info.plist */,
+				4612859D28125F2B009AF8AE /* TrueFormApp.swift */,
+				4612859F28125F2B009AF8AE /* ContentView.swift */,
+				46A3FD602813A5570057CAB0 /* FileReceiver.swift */,
+				46D2575B282ADAC200CC311A /* RunAnalyzer.swift */,
+				46D2575D282ADB1800CC311A /* RunVisualizer.swift */,
+				461285A128125F30009AF8AE /* Assets.xcassets */,
+				461285A328125F30009AF8AE /* Preview Content */,
+			);
+			path = TrueForm;
+			sourceTree = "<group>";
+		};
+		461285A328125F30009AF8AE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				461285A428125F30009AF8AE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		461285AC28125F30009AF8AE /* TrueForm WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				461285AD28125F32009AF8AE /* Assets.xcassets */,
+			);
+			path = "TrueForm WatchKit App";
+			sourceTree = "<group>";
+		};
+		461285B728125F33009AF8AE /* TrueForm WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				46A3FD5E28139EC70057CAB0 /* FileSender.swift */,
+				4601D9B6281262CC005EDE3A /* SensorManager.swift */,
+				461285B828125F33009AF8AE /* ContentView.swift */,
+				461285BA28125F33009AF8AE /* TrueFormApp.swift */,
+				461285BC28125F33009AF8AE /* ComplicationController.swift */,
+				461285BE28125F35009AF8AE /* Assets.xcassets */,
+				461285C328125F35009AF8AE /* Info.plist */,
+				461285C028125F35009AF8AE /* Preview Content */,
+			);
+			path = "TrueForm WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		461285C028125F35009AF8AE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				461285C128125F35009AF8AE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4612859928125F2B009AF8AE /* TrueForm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 461285CE28125F35009AF8AE /* Build configuration list for PBXNativeTarget "TrueForm" */;
+			buildPhases = (
+				4612859628125F2B009AF8AE /* Sources */,
+				4612859728125F2B009AF8AE /* Frameworks */,
+				4612859828125F2B009AF8AE /* Resources */,
+				461285CD28125F35009AF8AE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				461285AB28125F30009AF8AE /* PBXTargetDependency */,
+			);
+			name = TrueForm;
+			productName = TrueForm;
+			productReference = 4612859A28125F2B009AF8AE /* TrueForm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		461285A728125F30009AF8AE /* TrueForm WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 461285CA28125F35009AF8AE /* Build configuration list for PBXNativeTarget "TrueForm WatchKit App" */;
+			buildPhases = (
+				461285A628125F30009AF8AE /* Resources */,
+				461285C928125F35009AF8AE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				461285B628125F33009AF8AE /* PBXTargetDependency */,
+			);
+			name = "TrueForm WatchKit App";
+			productName = "TrueForm WatchKit App";
+			productReference = 461285A828125F30009AF8AE /* TrueForm WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		461285B228125F33009AF8AE /* TrueForm WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 461285C628125F35009AF8AE /* Build configuration list for PBXNativeTarget "TrueForm WatchKit Extension" */;
+			buildPhases = (
+				461285AF28125F33009AF8AE /* Sources */,
+				461285B028125F33009AF8AE /* Frameworks */,
+				461285B128125F33009AF8AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TrueForm WatchKit Extension";
+			productName = "TrueForm WatchKit Extension";
+			productReference = 461285B328125F33009AF8AE /* TrueForm WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4612859228125F2A009AF8AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					4612859928125F2B009AF8AE = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					461285A728125F30009AF8AE = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					461285B228125F33009AF8AE = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 4612859528125F2A009AF8AE /* Build configuration list for PBXProject "TrueForm" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4612859128125F2A009AF8AE;
+			productRefGroup = 4612859B28125F2B009AF8AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4612859928125F2B009AF8AE /* TrueForm */,
+				461285A728125F30009AF8AE /* TrueForm WatchKit App */,
+				461285B228125F33009AF8AE /* TrueForm WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4612859828125F2B009AF8AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				461285A528125F30009AF8AE /* Preview Assets.xcassets in Resources */,
+				461285A228125F30009AF8AE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		461285A628125F30009AF8AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				461285AE28125F32009AF8AE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		461285B128125F33009AF8AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				461285C228125F35009AF8AE /* Preview Assets.xcassets in Resources */,
+				461285BF28125F35009AF8AE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4612859628125F2B009AF8AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D2575E282ADB1800CC311A /* RunVisualizer.swift in Sources */,
+				46A3FD612813A5570057CAB0 /* FileReceiver.swift in Sources */,
+				461285A028125F2B009AF8AE /* ContentView.swift in Sources */,
+				4612859E28125F2B009AF8AE /* TrueFormApp.swift in Sources */,
+				46D2575C282ADAC200CC311A /* RunAnalyzer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		461285AF28125F33009AF8AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				461285B928125F33009AF8AE /* ContentView.swift in Sources */,
+				461285BB28125F33009AF8AE /* TrueFormApp.swift in Sources */,
+				461285BD28125F33009AF8AE /* ComplicationController.swift in Sources */,
+				46A3FD5F28139EC70057CAB0 /* FileSender.swift in Sources */,
+				4601D9B7281262CC005EDE3A /* SensorManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		461285AB28125F30009AF8AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 461285A728125F30009AF8AE /* TrueForm WatchKit App */;
+			targetProxy = 461285AA28125F30009AF8AE /* PBXContainerItemProxy */;
+		};
+		461285B628125F33009AF8AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 461285B228125F33009AF8AE /* TrueForm WatchKit Extension */;
+			targetProxy = 461285B528125F33009AF8AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		461285C428125F35009AF8AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		461285C528125F35009AF8AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		461285C728125F35009AF8AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TrueForm WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = MZV7Q3YFM6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TrueForm WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TrueForm WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.larrytseng.TrueForm.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		461285C828125F35009AF8AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TrueForm WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = MZV7Q3YFM6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TrueForm WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TrueForm WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.larrytseng.TrueForm.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		461285CB28125F35009AF8AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MZV7Q3YFM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = TrueForm_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "TrueForm WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.larrytseng.TrueForm;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.larrytseng.TrueForm.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		461285CC28125F35009AF8AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MZV7Q3YFM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = TrueForm_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "TrueForm WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.larrytseng.TrueForm;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.larrytseng.TrueForm.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		461285CF28125F35009AF8AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TrueForm/Preview Content\"";
+				DEVELOPMENT_TEAM = MZV7Q3YFM6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrueForm/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.larrytseng.TrueForm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		461285D028125F35009AF8AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TrueForm/Preview Content\"";
+				DEVELOPMENT_TEAM = MZV7Q3YFM6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrueForm/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.larrytseng.TrueForm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4612859528125F2A009AF8AE /* Build configuration list for PBXProject "TrueForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				461285C428125F35009AF8AE /* Debug */,
+				461285C528125F35009AF8AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		461285C628125F35009AF8AE /* Build configuration list for PBXNativeTarget "TrueForm WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				461285C728125F35009AF8AE /* Debug */,
+				461285C828125F35009AF8AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		461285CA28125F35009AF8AE /* Build configuration list for PBXNativeTarget "TrueForm WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				461285CB28125F35009AF8AE /* Debug */,
+				461285CC28125F35009AF8AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		461285CE28125F35009AF8AE /* Build configuration list for PBXNativeTarget "TrueForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				461285CF28125F35009AF8AE /* Debug */,
+				461285D028125F35009AF8AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4612859228125F2A009AF8AE /* Project object */;
+}
